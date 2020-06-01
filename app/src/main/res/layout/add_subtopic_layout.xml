@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".EditNote">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUBTOPIC"
+        android:textAllCaps="true"
+        android:textColor="#0099cc"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ast_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Subtopic name"
+        android:inputType="textMultiLine"
+        android:textColor="#0099cc" />
+
+    <EditText
+        android:id="@+id/ast_sum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Subtopic summary"
+        android:inputType="textMultiLine"
+        android:textColor="#0099cc" />
+
+    <Button
+        android:id="@+id/ast_add_subtopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:text="add subtopic"
+        android:textColor="#0099cc" />
+
+    <Button
+        android:id="@+id/ast_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:text="close"
+        android:textColor="#0099cc" />
+</LinearLayout>

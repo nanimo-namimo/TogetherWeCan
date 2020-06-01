@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubTopicActivity">
+    <include layout="@layout/toolbar"
+        android:id="@+id/my_toolbar"/>
+
+    <TextView
+        android:id="@+id/vtopic_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="SubtopicName"
+        android:textAlignment="center"
+        android:textColor="#0099cc"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
+
+    <Button
+        android:id="@+id/vb_view_subtopics_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="view notes"
+        android:textColor="#0099cc"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vtopic_summary" />
+
+    <Button
+        android:id="@+id/vtopics_attemp_quiz_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Attempt quiz"
+        android:textColor="#0099cc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vb_view_subtopics_btn" />
+
+    <TextView
+        android:id="@+id/vtopic_summary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="subtopic summary"
+        android:textAlignment="center"
+        android:textColor="#0099cc"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vtopic_name"
+        tools:ignore="RtlCompat" />
+
+    <FrameLayout
+        android:id="@+id/frame_accuracy"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vtopics_attemp_quiz_btn">
+
+
+            <TextView
+                android:id="@+id/book_percent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="your percentage in last quiz is "
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+        <com.timqi.sectorprogressview.SectorProgressView
+            android:id="@+id/spv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            app:bgColor="@android:color/holo_red_light"
+            app:fgColor="@color/colorAccent"
+            app:percent="90"
+            app:startAngle="0" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

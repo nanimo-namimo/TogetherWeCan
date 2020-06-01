@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.timqi.sectorprogressview.SectorProgressView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spv"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        app:bgColor="#e5e5e5"
+        app:fgColor="#ff765c"
+        app:percent="25"
+        app:startAngle="0" />
+
+    <LinearLayout
+        android:id="@+id/llStartAngle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="startAngle: " />
+
+        <SeekBar
+            android:id="@+id/sbStartAngle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="360"
+            android:progress="0" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

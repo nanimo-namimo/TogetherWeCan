@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/toolbar_3"
+        layout="@layout/toolbar" />
+
+    <EditText
+        android:id="@+id/un_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textColor="#0099cc" />
+
+    <EditText
+        android:id="@+id/un_summ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textColor="#0099cc" />
+
+    <Button
+        android:id="@+id/up_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:text="update"
+        android:textColor="#0099cc" />
+
+    <Button
+        android:id="@+id/un_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:text="close"
+        android:textColor="#0099cc" />
+</LinearLayout>

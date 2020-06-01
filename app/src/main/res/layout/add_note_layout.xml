@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".EditNote">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOTE"
+        android:textAllCaps="true"
+        android:textColor="#0099cc"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/an_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="note title"
+        android:inputType="textMultiLine"
+        android:textColor="#0099cc" />
+
+    <EditText
+        android:id="@+id/an_sum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="note description"
+        android:inputType="textMultiLine"
+        android:textColor="#0099cc" />
+
+    <Button
+        android:id="@+id/an_add_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:text="add note"
+        android:textColor="#0099cc" />
+
+    <Button
+        android:id="@+id/an_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:text="close"
+        android:textColor="#0099cc" />
+</LinearLayout>
